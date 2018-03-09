@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content= "人工知能プログラミングに特化した マンツーマンオンラインプログラミングスクールです。プログラミング言語Pythonや機械学習・深層学習、データサイエンスなどが学べます。">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="<%- root %>assets/img/favicon.png">
+<link rel="apple-touch-icon" href="<%- root %>assets/img/OGP.png">
+<meta property="og:title" content= "AI Academy | 人工知能に特化したプログラミングスクール" >
+<meta property="og:description" content="人工知能プログラミングに特化した マンツーマンオンラインプログラミングスクールです。プログラミング言語Pythonや機械学習・深層学習、データサイエンスなどが学べます。">
+<meta property="og:url" content="http://aiacademy.jp/">
+<meta property="og:image" content="<%- root %>assets/img/OGP.png">
+<meta property="og:type" content= "<%= type %>">
+<meta property="og:site_name" content="AI Academy | 人工知能に特化したプログラミングスクール">
+<meta property="og:locale" content="ja_JP">
+<link rel="stylesheet" href="<%- root %>assets/css/app.css">
+<title><%= title %></title>
+<% if ( type === 'website') { %>
+<script src="<%- root %>assets/js/bundle.js"></script>
+<% } %>
+</head>
+<body>
+<div class="l-wrap">
+<header>
+  <div id="jsi-headerBox" class="l-header-scroll">
+    <p class="l-header-scroll__logo--pc"><img src="<%- root %>assets/img/logo_title_green.svg" alt="AI Academy"></p>
+    <p class="l-header-scroll__logo--sp"><img src="<%- root %>assets/img/logo_title_green_head_sp.svg" alt="AI Academy"></p>
+    <a href="<%- root %>?id=form" class="c-button--head jsc-goToForm" data-goto="0">
+      <p class="c-svg u-br__sp">
+        <svg class="c-svg__inner" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 367 56">
+          <g fill="#00E7E7" fill-rule="evenodd">
+            <text font-family="YuGo-Bold, YuGothic" font-size="24" font-weight="bold" letter-spacing="3">
+              <tspan x="40.5" y="36"><tspan class="c-svg__space">&ensp;</tspan>レッスンを予約（無料）</tspan>
+            </text>
+            <!-- <root d="M14.56 55.16H0V.28h14.56l-.98 5.18H6.51v44.59h7.07zM351.7.28h14.49v54.88H351.7l.91-5.11h7V5.46h-7z"/> -->
+          </g>
+        </svg>
+      </p>
+      <p class="c-svg--sp">
+        <svg class="c-svg__inner" xmlns="http://www.w3.org/2000/svg" width="177" height="22" viewbox="0 0 177 22">
+          <g fill="#00E7E7" fill-rule="evenodd">
+            <text font-family="YuGo-Bold, YuGothic" font-size="14" font-weight="bold" letter-spacing="1">
+            <tspan x="10.5" y="17"><tspan class="c-svg__space">&ensp;</tspan>レッスンを予約（無料）</tspan>
+            </text>
+            <!-- <root d="M6.008 21.288H.6V.904h5.408l-.364 1.924H3.018V19.39h2.626zM171.26.904h5.382v20.384h-5.382l.338-1.898h2.6V2.828h-2.6z"/> -->
+          </g>
+        </svg>
+      </p>
+    </a>
+  </div>
+  <div class="l-header__wrap">
+    <p class="l-header__wrap__text">Pythonや機械学習・深層学習などの人工知能に関する<span class="u-inlineBlock">内容が学べるオンラインマンツーマンスクール</span></p>
+  </div>
+</header>

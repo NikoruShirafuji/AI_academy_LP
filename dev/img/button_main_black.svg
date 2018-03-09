@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="367" height="56" viewBox="0 0 367 56">
+    <g fill="#111" fill-rule="evenodd">
+        <text font-family="YuGo-Bold, YuGothic" font-size="24" font-weight="bold" letter-spacing="3">
+            <tspan x="40.5" y="36">レッスンを予約（無料</tspan> <tspan x="310.5" y="36">）</tspan>
+        </text>
+        <path d="M14.56 55.16H0V.28h14.56l-.98 5.18H6.51v44.59h7.07zM351.7.28h14.49v54.88H351.7l.91-5.11h7V5.46h-7z"/>
+    </g>
+</svg>

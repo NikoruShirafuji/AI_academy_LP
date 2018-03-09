@@ -1,0 +1,72 @@
+/* -------------------------------------------------
+  .p-other
+---------------------------------------------------- */
+.p-other {
+  padding: 154px 0 100px;
+
+  @include mq(sp) {
+    padding: 72px 15px 45px;
+  }
+}
+.p-other__block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.p-other__mainTitle {
+  margin-bottom: 30px;
+  color: $aiblack;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.29;
+  text-align: center;
+
+  @include mq(sp) {
+    margin-bottom: 20px;
+  }
+}
+.p-other__underline {
+  width: 69px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-bottom: solid 1px $aipalegray;
+
+  @include mq(sp) {
+    margin-bottom: 11px;
+  }
+}
+.p-other__contentsWrap > li {
+  margin-bottom: 25px;
+
+  @include mq(sp) {
+    margin-bottom: 15px;
+  }
+}
+.p-other__contentsTitle {
+  margin-bottom: 5px;
+  color: $aiblack;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.41;
+
+  @include mq(sp) {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
+.p-other__contentsText {
+  margin-bottom: 25px;
+  line-height: 1.71;
+
+  @include mq(sp) {
+    margin-bottom: 15px;
+  }
+}
+.p-other__allianceImage {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2682d6;
+
+  @include mq(sp) {
+    max-width: 300px;
+  }
+}

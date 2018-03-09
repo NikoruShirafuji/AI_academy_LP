@@ -1,0 +1,62 @@
+.c-button--head {
+  display: block;
+  width: 267px;
+
+  @include mq(sp) {
+    width: 177px;
+    padding: 3px 0;
+  }
+  & path, & tspan {
+    transition: fill 0.3s;
+  }
+  &:hover path, &:hover tspan {
+    fill: #fff;
+  }
+}
+.c-button--large {
+  display: block;
+  height: auto;
+  max-width: 360px;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    height: auto;
+    max-width: 270px;
+  }
+  & path, & tspan {
+    transition: fill 0.3s;
+  }
+  &:hover path, &:hover tspan {
+    fill: #fff;
+  }
+}
+.c-button--green {
+  display: block;
+  width: 367px;
+  height: auto;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    width: 290px;
+  }
+  & path, tspan {
+    fill: #fff;
+  }
+  & path, & tspan {
+    transition: fill 0.3s;
+  }
+  &:hover path, &:hover tspan {
+    fill: $maincolor;
+  }
+}
+.c-button--green--takeLesson {
+  display: block;
+  width: 367px;
+  height: auto;
+  margin: 0 auto;
+
+  fill: $maincolor;
+  @include mq(sp) {
+    width: 290px;
+  }
+}

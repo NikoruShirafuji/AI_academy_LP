@@ -1,0 +1,798 @@
+<%
+  var title = "AI Academy | 人工知能に特化したプログラミングスクール";
+  var type = "website";
+  var page = { name: ""};
+  var root = config.root;
+ %>
+<% include template/_head %>
+
+<section class="p-top-firstView">
+  <div id="jsi-video" class="p-top-firstView__videoWrap">
+  </div>
+  <div class="p-top-firstView__wrap">
+    <div class="p-top-firstView__inner">
+      <p class="p-top-firstView__logo--pc"><img src="<%- root %>assets/img/logo_title_green.svg" alt="タイトルロゴ"></p>
+      <p class="p-top-firstView__logo--sp"><img src="<%- root %>assets/img/logo_title_green_sp.svg" alt="タイトルロゴSP"></p>
+      <div class="p-top-firstView__titleWrap">
+        <div class="p-top-firstView__circle">
+          <p class="p-top-firstView__circle__text">カリキュラム<br>満足度</p>
+          <p class="p-top-firstView__circle__no1 u-ffeg--700">No.<span class="p-top-firstView__circle__one">1</span></p>
+        </div>
+        <h2 class="p-top-firstView__title">人工知能に特化した<br>オンラインプログラ<span class="u-inlineBlock">ミング</span>スクール</h2>
+      </div>
+      <a href="<%- root %>?id=form" class="c-button--green jsc-goToForm" data-goto="0">
+        <p class="c-svg">
+          <svg class="c-svg__inner" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 367 56">
+            <g fill="#00E7E7" fill-rule="evenodd">
+              <text font-family="YuGo-Bold, YuGothic" font-size="24" font-weight="bold" letter-spacing="3">
+                <tspan x="40.5" y="36"><tspan class="c-svg__space">&ensp;</tspan>レッスンを予約（無料）</tspan>
+              </text>
+              <path d="M14.56 55.16H0V.28h14.56l-.98 5.18H6.51v44.59h7.07zM351.7.28h14.49v54.88H351.7l.91-5.11h7V5.46h-7z"/>
+            </g>
+          </svg>
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="jsi-headerInPoint" class="p-top-about">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">ABOUT "AI Academy"</p>
+    <h2 class="p-top-title__main"><img src="<%- root %>assets/img/logo_title_black.svg" alt="メインロゴ">とは？</h2>
+    <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+  </div>
+  <p class="p-top-about__text">
+    <span class="u-fwb--pc">人工知能プログラミングに特化した</span><br class="u-br__sp">マンツーマン<span class="u-fwb--pc">オンラインプログラミング</span>スクールです。<br class="u-br__sp">プログラミング言語Pythonや機械学習・深層学習、<br class="u-br__sp">データサイエンスなどが学べます。
+  </p>
+</section>
+
+<section class="p-top-features">
+  <div class="p-top-features__inner">
+    <div class="p-top-title">
+      <p class="p-top-title__sub u-ffeg--300">5 FEATURES</p>
+      <h2 class="p-top-title__main">3つの特徴</h2>
+      <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+    </div>
+    <ul class="p-top-featureList">
+      <li>
+        <div class="p-top-featureList__icon"><img src="<%- root %>assets/img/icon_text.svg" alt="テキストアイコン"></div>
+        <dl class="p-top-featureList__text">
+          <dt>AI Academyオリジナルテキスト</dt>
+          <dd>数百回修正を加えた、AI Academyオリジナルテキストで効率的に学べます。 AIの分野などは情報の移り変わりが激しいため常に最新の情報を元にコンテンツを更新していきます。</dd>
+        </dl>
+        <p class="p-top-featureList__note">※一部のコースで参考書をご用意して頂きます。</p>
+      </li>
+      <li>
+        <div class="p-top-featureList__icon"><img src="<%- root %>assets/img/icon_text.svg" alt="テキストアイコン"></div>
+        <dl class="p-top-featureList__text">
+          <dt>AI Academyオリジナルテキスト</dt>
+          <dd>数百回修正を加えた、AI Academyオリジナルテキストで効率的に学べます。 AIの分野などは情報の移り変わりが激しいため常に最新の情報を元にコンテンツを更新していきます。</dd>
+        </dl>
+        <p class="p-top-featureList__note">※一部のコースで参考書をご用意して頂きます。</p>
+      </li>
+      <li>
+        <div class="p-top-featureList__icon"><img src="<%- root %>assets/img/icon_text.svg" alt="テキストアイコン"></div>
+        <dl class="p-top-featureList__text">
+          <dt>AI Academyオリジナルテキスト</dt>
+          <dd>数百回修正を加えた、AI Academyオリジナルテキストで効率的に学べます。 AIの分野などは情報の移り変わりが激しいため常に最新の情報を元にコンテンツを更新していきます。</dd>
+        </dl>
+        <p class="p-top-featureList__note">※一部のコースで参考書をご用意して頂きます。</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="p-top-courses">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">LEARN SKILLS &amp; COURSES</p>
+    <h2 class="p-top-title__main">学べるスキルと<span class="u-inlineBlock">コース</span></h2>
+    <p class="p-top-title__bar">
+      <img src="<%- root %>assets/img/line_title.svg" alt="ライン">
+    </p>
+  </div>
+  <ul class="p-top-courses__block">
+    <li>
+      <div class="p-top-courses__title__wrap">
+        <p class="p-top-courses__title__text">Pythonプログラミングマスターコース</p>
+        <p class="p-top-underLine"></p>
+      </div>
+      <div class="p-top-cc">
+        <div class="p-top-cc__textWrap">
+          <p class="p-top-cc__text">プログラミング言語Pythonを学び、AIプログラミングに必要な基本文法が身につきます。 また、最終的には0から簡単なコマンドラインツールや業務効率化できるプログラムなどが作れるようになります。プログラミングを全くしたことのないプログラミング未経験者の方にオススメです。</p>
+          <div>
+            <p class="p-top-cc__list__title">内容</p>
+            <div class="p-top-cc__list__wrap">
+              <ul class="p-top-cc__list__lists-1st">
+                <li>・Python 基本</li>
+                <li>・Python データ型</li>
+                <li>・制御構文</li>
+                <li>・関数</li>
+                <li>・例外処理</li>
+                <li>・テキストファイルの読み書き</li>
+                <li>・モジュール・ライブラリに関して</li>
+              </ul>
+              <ul class="p-top-cc__list__lists-2nd">
+                <li>・クラス</li>
+                <li>・正規表現</li>
+                <li>・アルゴリズム</li>
+                <li>・ユニットテスト</li>
+                <li>・実践問題</li>
+                <li>・習熟度判定テスト</li>
+              </ul>
+            </div>
+          </div>
+          <p class="p-top-cc__list__note">現状、Pythonコースのテキストは受講者のフィードバックをもとに800回以上改善が行われており、常に改善を繰り返しております。<br>※新コース「Python Webコース」準備中</p>
+        </div>
+        <p class="p-top-cc__img--python">
+          <img src="<%- root %>assets/img/logo_courses_python.svg" alt="pythonロゴ">
+        </p>
+      </div>
+    </li>
+
+
+    <li>
+      <div class="p-top-courses__title__wrap">
+        <p class="p-top-courses__title__text">AIプログラミングコース</p>
+        <p class="p-top-underLine"></p>
+      </div>
+      <div class="p-top-cc--ai">
+        <div class="p-top-cc__textWrap">
+          <p class="p-top-cc__text">Pythonを使い、DeepLearningに関して学習し、人工知能プログラミングを学びます。</p>
+          <div>
+            <p class="p-top-cc__list__title">内容</p>
+            <div class="p-top-cc__list__wrap">
+              <ul>
+                <li>・人工知能入門</li>
+                <li>・人工知能の作り方と人工知能の活用方法</li>
+                <li>・機械学習とは</li>
+                <li>・AIシステムの設計・構築に関しての手順</li>
+                <li>・ディープラーニング</li>
+                <li>・TensorFLow チュートリアル</li>
+                <li>・TensorFlow 認識問題</li>
+                <li>・Keras チュートリアル</li>
+                <li>・Keras 認識問題</li>
+                <li>・論文の読み方（最新の論文紹介）</li>
+                <li>・実践編 （応用プロジェクト）</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="p-top-cc__img--ai">
+          <img src="<%- root %>assets/img/logo_courses_ai.png" alt="aiロゴ">
+        </p>
+      </div>
+    </li>
+  </ul>
+  <ul class="p-top-ccTextList">
+    <li>
+      <dl>
+        <dt>Pythonによる統計学入門</dt>
+        <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+      </dl>
+    </li>
+    <li>
+      <dl>
+        <dt>機械学習に必要な数学入門</dt>
+        <dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+      </dl>
+    </li>
+  </ul>
+</section>
+
+
+<div class="p-top-takeLesson">
+  <div class="p-top-takeLesson__block">
+    <p class="p-top-takeLesson__text">無料体験レッスンはこちらから</p>
+    <a href="<%- root %>?id=form" class="c-button--green--takeLesson jsc-goToForm" data-goto="0">
+        <p class="c-svg">
+          <svg class="c-svg__inner" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 367 56">
+            <g fill="#00E7E7" fill-rule="evenodd">
+              <text font-family="YuGo-Bold, YuGothic" font-size="24" font-weight="bold" letter-spacing="3">
+                <tspan x="40.5" y="36"><tspan class="c-svg__space">&ensp;</tspan>レッスンを予約（無料）</tspan>
+              </text>
+              <path d="M14.56 55.16H0V.28h14.56l-.98 5.18H6.51v44.59h7.07zM351.7.28h14.49v54.88H351.7l.91-5.11h7V5.46h-7z"/>
+            </g>
+          </svg>
+        </p>
+      </a>
+  </div>
+</div>
+
+
+<section class="p-top-recommend ">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">RECOMMENDED FOR PEOPLE LIKE THIS</p>
+    <h2 class="p-top-title__main u-fc-white">こんな方におすすめ</h2>
+    <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+    <div class="p-top-recommend__block">
+      <div class="p-top-recommend__typeWrap">
+        <p class="p-top-recommend__icon--man"><img src="<%- root %>assets/img/icon_recommend_man.svg" alt="アイコン人"></p>
+        <p class="p-top-recommend__text">機械学習や深層学習(Deep <span class="u-inlineBlock">Learning)</span>を独学で始めたが、挫折して<span class="u-inlineBlock">しまった方</span></p>
+      </div>
+      <div class="p-top-recommend__typeWrap">
+        <p class="p-top-recommend__icon--ai"><img src="<%- root %>assets/img/icon_recommend_ai.svg" alt="アイコンAI"></p>
+        <p class="p-top-recommend__text">仕事でAI・機械学習技術などの導入を<span class="u-inlineBlock">検討されている方</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="p-top-flow">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">FLOW TO ATTENDANCE</p>
+    <h2 class="p-top-title__main">受講までの流れ</h2>
+    <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+    <div class="p-top-flow__block">
+      <div class="p-top-flow__stepWrap">
+        <div class="p-top-flow__circle--pen">
+          <img src="<%- root %>assets/img/icon_flow_pen.svg" alt="アイコンペン">
+        </div>
+        <dl class="p-top-flow__contentsWrap">
+          <dt class="p-top-flow__title">無料お申し込み</dt>
+          <dd class="p-top-flow__text">[レッスンを予約（無料）]から申し込みをすると担当者から折り返しのご連絡を送らせていただきます。</dd>
+        </dl>
+      </div>
+      <p class="p-top-flow__arrow--pc"><img src="<%- root %>assets/img/icon_flow_arrow_pc.svg" alt="アイコン矢印"></p>
+      <p class="p-top-flow__arrow--sp"><img src="<%- root %>assets/img/icon_flow_arrow_sp.svg" alt="アイコン矢印"></p>
+      <div class="p-top-flow__stepWrap">
+        <div class="p-top-flow__circle--yen"><img src="<%- root %>assets/img/icon_flow_yen.svg" alt="アイコン円"></div>
+        <dl class="p-top-flow__contentsWrap">
+          <dt class="p-top-flow__title">受講料のお支払い</dt>
+          <dd class="p-top-flow__text">当講座指定の支払い方法にて入金を行なってください。</dd>
+        </dl>
+      </div>
+      <p class="p-top-flow__arrow--pc"><img src="<%- root %>assets/img/icon_flow_arrow_pc.svg" alt="アイコン矢印"></p>
+      <p class="p-top-flow__arrow--sp"><img src="<%- root %>assets/img/icon_flow_arrow_sp.svg" alt="アイコン矢印"></p>
+      <div class="p-top-flow__stepWrap">
+        <div class="p-top-flow__circle--monitor"><img src="<%- root %>assets/img/icon_flow_monitor.svg" alt="アイコンモニター"></div>
+        <dl class="p-top-flow__contentsWrap">
+          <dt class="p-top-flow__title">受講開始</dt>
+          <dd class="p-top-flow__text">受講方法や開始については、担当者からご連絡させていただきます。</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="p-top-fee">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">TUITION FEE</p>
+    <h2 class="p-top-title__main">受講料金</h2>
+    <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+  </div>
+  <ul class="p-top-fee__list">
+    <li>
+      <div>
+        <p class="p-top-fee__subtitle">Python&AIプログラミング</p>
+        <h3 class="p-top-fee__contentsTitle">Liteプラン</h3>
+        <p class="p-top-fee__price u-ffeg--700">¥980<span class="p-top-fee__inTax">(税込)/月</span></p>
+        <p class="p-top-fee__text">50種類以上のテキストコンテンツ受講可能<br>※チャット非対応</p>
+        <div class="p-top-fee__btnWrap">
+          <a href="<%- root %>?id=form" class="c-button--large jsc-goToForm" data-goto="0">
+            <p class="c-svg">
+              <svg class="c-svg__inner" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 367 56">
+                <g fill="#00E7E7" fill-rule="evenodd">
+                  <text font-family="YuGo-Bold, YuGothic" font-size="24" font-weight="bold" letter-spacing="3">
+                    <tspan x="40.5" y="36"><tspan class="c-svg__space">&ensp;</tspan>このプランに申し込む</tspan>
+                  </text>
+                  <path d="M14.56 55.16H0V.28h14.56l-.98 5.18H6.51v44.59h7.07zM351.7.28h14.49v54.88H351.7l.91-5.11h7V5.46h-7z"/>
+                </g>
+              </svg>
+            </p>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="p-top-fee__subtitle">Python&AIプログラミング</p>
+        <h3 class="p-top-fee__contentsTitle">Basicプラン</h3>
+        <p class="p-top-fee__price u-ffeg--700">¥29,980<span class="p-top-fee__inTax">(税込)/月</span></p>
+        <p class="p-top-fee__text">1) 50種類以上のテキストコンテンツ受講可能<br>+ 2) 受講期間中チャットでの質問し放題<br>+ 3) AI Academyセミナー参加割引</p>
+        <div class="p-top-fee__btnWrap">
+          <a href="<%- root %>?id=form" class="c-button--large jsc-goToForm" data-goto="0">
+            <p class="c-svg">
+              <svg class="c-svg__inner" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 367 56">
+                <g fill="#00E7E7" fill-rule="evenodd">
+                  <text font-family="YuGo-Bold, YuGothic" font-size="24" font-weight="bold" letter-spacing="3">
+                    <tspan x="40.5" y="36"><tspan class="c-svg__space">&ensp;</tspan>このプランに申し込む</tspan>
+                  </text>
+                  <path d="M14.56 55.16H0V.28h14.56l-.98 5.18H6.51v44.59h7.07zM351.7.28h14.49v54.88H351.7l.91-5.11h7V5.46h-7z"/>
+                </g>
+              </svg>
+            </p>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="p-top-fee__subtitle">Python&AIプログラミング</p>
+        <h3 class="p-top-fee__contentsTitle">Premiumプラン</h3>
+        <p class="p-top-fee__price u-ffeg--700">¥79,980<span class="p-top-fee__inTax">(税込)/月</span></p>
+        <p class="p-top-fee__text">1) 50種類以上のテキストコンテンツ受講可能<br>+ 2) 受講期間中チャットでの質問し放題<br>+ 3) AI Academyセミナー参加割引</p>
+        <div class="p-top-fee__btnWrap">
+          <a href="<%- root %>?id=form" class="c-button--large jsc-goToForm" data-goto="0">
+            <p class="c-svg">
+              <svg class="c-svg__inner" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 367 56">
+                <g fill="#00E7E7" fill-rule="evenodd">
+                  <text font-family="YuGo-Bold, YuGothic" font-size="24" font-weight="bold" letter-spacing="3">
+                    <tspan x="40.5" y="36"><tspan class="c-svg__space">&ensp;</tspan>このプランに申し込む</tspan>
+                  </text>
+                  <path d="M14.56 55.16H0V.28h14.56l-.98 5.18H6.51v44.59h7.07zM351.7.28h14.49v54.88H351.7l.91-5.11h7V5.46h-7z"/>
+                </g>
+              </svg>
+            </p>
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="p-top-voice">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">Students voice</p>
+    <h2 class="p-top-title__main">受講生の声</h2>
+    <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+  </div>
+  <div class="p-top-swiperWrapper">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div id="jsi-voice" class="p-top-voiceListContainer swiper-container">
+        <!-- If we need navigation buttons -->
+        <ul class="p-top-voiceList swiper-wrapper">
+          <li class="swiper-slide">
+            <div class="p-top-voiceList__icon"><img src="<%- root %>assets/img/icon_men.svg" alt="男性アイコン"></div>
+            <dl class="p-top-voiceList__text">
+              <dt>20代 男性 A.N</dt>
+              <dd>AI AcademyはPythonや数学の基礎からディープラーニングまでカリキュラムが幅広くて、月額980円は最高のコストパフォーマンスだと思います。学んだ内容が業務に活かせています。<br>AI Academyでしっかり学んでKaggleに挑戦していきたいです。</dd>
+            </dl>
+          </li>
+          <li class="swiper-slide">
+            <div class="p-top-voiceList__icon"><img src="<%- root %>assets/img/icon_women.svg" alt="女性アイコン"></div>
+            <dl class="p-top-voiceList__text">
+              <dt>20代 女性 A.N</dt>
+              <dd>AI AcademyはPythonや数学の基礎からディープラーニングまでカリキュラムが幅広くて、月額980円は最高のコストパフォーマンスだと思います。学んだ内容が業務に活かせています。<br>AI Academyでしっかり学んでKaggleに挑戦していきたいです。</dd>
+            </dl>
+          </li>
+          <li class="swiper-slide">
+            <div class="p-top-voiceList__icon"><img src="<%- root %>assets/img/icon_men.svg" alt="男性アイコン"></div>
+            <dl class="p-top-voiceList__text">
+              <dt>20代 男性 A.N</dt>
+              <dd>AI AcademyはPythonや数学の基礎からディープラーニングまでカリキュラムが幅広くて、月額980円は最高のコストパフォーマンスだと思います。学んだ内容が業務に活かせています。<br>AI Academyでしっかり学んでKaggleに挑戦していきたいです。</dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+
+</section>
+
+
+<section class="p-top-qa">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">Q&amp;A</p>
+    <h2 class="p-top-title__main">よくある質問</h2>
+    <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+  </div>
+  <div class="p-top-qa__block">
+    <ul class="p-top-qa__list">
+      <li>
+        <dl class="p-top-qa__questionWrap">
+          <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>レッスン形式はオンラインのみですか？</dt>
+          <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>はい。現在は、遠隔でもレッスンができるように、オンラインでマンツーマンで利用いただけるようにオンラインの形式をとっております。</dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="p-top-qa__questionWrap">
+          <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>通話サポートの方はどのような人達ですか？</dt>
+          <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>PythonコースのエンジニアはPythonで業務をした経験のある方です。<br>AIコースのエンジニアは主に人工知能分野の研究をされている理系大学生・理系大学院の方です。</dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="p-top-qa__questionWrap">
+          <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>お支払い方法は何ですか？</dt>
+          <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>銀行振込となっております。</dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="p-top-qa__questionWrap">
+          <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>受講する上で用意するものはありますか？</dt>
+          <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>Skypeを利用しますので、あらかじめSkypeをインストールして頂きます。また、Googleハングアウトでも可能です。</dd>
+        </dl>
+      </li>
+      <li>
+        <dl class="p-top-qa__questionWrap">
+          <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>受講料支払い完了後のキャンセル・中途解約は可能ですか？</dt>
+          <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>受講料支払い完了後のキャンセル及び中途解約した場合、返金はできませんのでご注意ください。</dd>
+        </dl>
+      </li>
+    </ul>
+    <div class="p-top-qa__listWrap">
+      <ul class="p-top-qa__list">
+        <li>
+          <dl class="p-top-qa__questionWrap">
+            <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>コースで学べるプログラミング言語は何ですか？</dt>
+            <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>言語はPythonを使用します。 またバージョンは3系です。</dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="p-top-qa__questionWrap">
+            <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>レッスンの振替は可能ですか？</dt>
+            <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>はい。可能です。レッスン開始1時間前に講師に連絡を入れていただければ、その日のレッスンは消費されず、無料で振替も可能です。</dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="p-top-qa__questionWrap">
+            <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>レッスンを予約する期限はいつまでなど決まりはありますか？</dt>
+            <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>前日の23:40分の最終レッスン終了までであればご予約できます。</dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="p-top-qa__questionWrap">
+            <dt class="p-top-qa__question"><span class="p-top-qa__icon u-ffeg--700">Q</span>各コースごとの終了目安は何回くらいでしょうか？</dt>
+            <dd class="p-top-qa__answer"><span class="p-top-qa__icon u-ffeg--300">A</span>Pythonプログラミングコースですと、過去に1か月で修了された方もいれば、2、3か月かかる場合もございます。<br>AIプログラミングコースであれば、早い方だと2〜3か月、平均で4〜5ヶ月はかかる目安になります。</dd>
+          </dl>
+        </li>
+      </ul>
+      <p class="p-top-qa__others">その他お問い合わせは<a href="mailto:info@cyberbra.in?subject=AI%20Academyへのお問い合わせ&body=お名前・お問い合わせ内容をご記載の上、送信してください。" class="p-top-qa__link">こちら</a></p>
+    </div>
+  </div>
+</section>
+
+
+<section class="p-top-teacher">
+  <div class="p-top-title">
+    <p class="p-top-title__sub u-ffeg--300">TEACHER</p>
+    <h2 class="p-top-title__main">講師紹介</h2>
+    <p class="p-top-title__bar"><img src="<%- root %>assets/img/line_title.svg" alt="bar"></p>
+  </div>
+  <ul class="p-top-teacher__list">
+    <li>
+      <p class="p-top-teacher__img"><img src="<%- root %>assets/img/img_teacher_tani.png" alt="講師イメージ"></p>
+      <dl class="p-top-teacher__textWrap">
+        <dt class="p-top-teacher__name">谷&nbsp;一徳</dt>
+        <dd class="p-top-teacher__text">サイバーブレイン株式会社代表取締役/CEO。べンチャー企業にて、約2年間CTO(最高技術責任者)を担当。webサイト・Webサービス・Webシステム開発、サーバ・インフラ構築スマートファンアプリのAPIやレコメンドエンジン開発、クローラーなど今まで多岐に渡る仕事に携わる。以降毎月100名以上にプログラミングやAI技術を教える。</dd>
+      </dl>
+    </li>
+    <li>
+      <p class="p-top-teacher__img"><img src="<%- root %>assets/img/img_teacher_han.png" alt="講師イメージ"></p>
+      <dl class="p-top-teacher__textWrap">
+        <dt class="p-top-teacher__name">潘&nbsp;秋実</dt>
+        <dd class="p-top-teacher__text">大学にて情報学、機械学習、ディープラーニングを学ぶ。現在は、ディープラーニングを使った自然言語処理を主に扱う。よく使うプログラミング言語は、Python, Ruby (RoR)</dd>
+      </dl>
+    </li>
+    <li>
+      <p class="p-top-teacher__img"><img src="<%- root %>assets/img/img_teacher_nishimura.png" alt="講師イメージ"></p>
+      <dl class="p-top-teacher__textWrap">
+        <dt class="p-top-teacher__name">西村&nbsp;風芽</dt>
+        <dd class="p-top-teacher__text">AI Academy Pythonコース / AIコース 担当講師。高専出身。その後、N高校に入学。現在はスタートアップにて、DeepLearningを用いた脳波解析ソフトウェアを研究開発。</dd>
+      </dl>
+    </li>
+  </ul>
+</section>
+
+<div id="jsi-form" class="p-top-form">
+  <div class="p-top-form__block">
+    <div class="p-top-form__navWrap">
+      <ul id="jsi-formTitle" class="js-navWrap__titleList p-top-navWrap__titleList">
+        <li>AI Academy無料レッスンの予約</li>
+        <li>AI講師に応募</li>
+        <li>AIエンジニアをスカウトしたい企業様</li>
+      </ul>
+      <div class="p-top-navWrap__bar__box">
+        <p id="jsi-navBar" class="p-top-navWrap__bar"></p>
+      </div>
+    </div>
+    <ul id="jsi-formWrap" class="p-top-formWrap">
+      <li>
+  <h3 class="p-top-formWrap__title">AIエンジニアをスカウトしたい企業</h3>
+  <div class="p-top-formWrap__bar"></div>
+  <p class="p-top-formWrap__text">AI AcademyのAIプログラミングコース修了生を採用したいと希望される企業様やその他採用に関するお問い合わせはこちらからお願いいたします。<br>※採用の際には所定の紹介手数料が発生致しますので予めご了承ください。</p>
+  <form action="<%- root %>php/send.php" method="post" class="p-top-formWrap__form">
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">氏名<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="p-top-formWrap__inputText name_inp" type="text" name="company_name" maxlength="20" placeholder="谷 かずのり"></dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">企業名<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="p-top-formWrap__inputText" type="text" name="company_companyName" maxlength="30" placeholder="サイバーブレイン株式会社"></dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">メールアドレス<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__inputText jsc_inp" data-meta="email" type="text" name="company_mail" maxlength="30" placeholder="メールアドレス">
+        <p class="error_txt">アドレスの形式を正しく入力してください</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">電話番号<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__inputText u-mb5 jsc_inp" data-meta="tell" type="text" name="company_telephon" maxlength="20" placeholder="03-0000-0000">
+        <p class="error_txt">電話番号の形式を正しく入力してください</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">部署名<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="p-top-formWrap__inputText" type="text" name="company_section" maxlength="30" placeholder="AI開発部">
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">役職</dt>
+      <dd><input class="p-top-formWrap__inputText u-mb5" type="text" name="company_position" maxlength="20" placeholder="責任部長"></dd>
+    </dl>
+    <dl class="u-mb30">
+      <dt class="p-top-formWrap__labelTitle u-mb7">備考</dt>
+      <dd><textarea class="p-top-formWrap__textarea" rows="6" wrap="soft" maxlength="500" name="company_remarks" placeholder="その他ご質問等あればご記入ください"></textarea>
+      </dd>
+    </dl>
+    <input type="hidden" name="kind" value="company">
+    <a href="javascript:void(0)" class="p-top-formWrap__submit jsc_form_submit">内容を送信</a>
+  </form>
+</li>
+<li>
+  <h3 class="p-top-formWrap__title">AI講師に応募</h3>
+  <div class="p-top-formWrap__bar"></div>
+  <p class="p-top-formWrap__text">人工知能プログラミングに特化したマンツーマンオンラインプログラミングスクール「AI Academy」で講師を行っていただける方を募集しております。<br>以下の内容を記入後、Skype等で面談いたしますが、記入のほど宜しくお願い致します。</p>
+  <form action="<%- root %>php/send.php" method="post" class="p-top-formWrap__form">
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">氏名<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="p-top-formWrap__inputText name_inp" type="text" name="teacher_name" maxlength="20" placeholder="谷 かずのり"></dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">フリガナ<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="p-top-formWrap__inputText" type="text" name="teacher_kana" maxlength="20" placeholder="タニ カズノリ"></dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">年齢<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="p-top-formWrap__inputAge" type="text" name="teacher_age" maxlength="2" placeholder="22"><span class="p-top-formWrap__text">&nbsp;歳</span></dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">性別<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__radio" id="genderMale" type="radio" name="teacher_gender" value="男性">
+        <label class="p-top-formWrap__input  u-mb0" for="genderMale">男性</label>
+        <input class="p-top-formWrap__radio" id="genderFemale" type="radio" name="teacher_gender" value="女性">
+        <label class="p-top-formWrap__input u-mb0 u-ml30" for="genderFemale">女性</label>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">メールアドレス<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__inputText jsc_inp" data-meta="email" type="text" name="teacher_mail" maxlength="30" placeholder="メールアドレス">
+        <p class="error_txt">アドレスの形式を正しく入力してください</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">緊急連絡先電話番号<span class="p-top-formWrap__must">*</span></dt>
+      <dd class="p-top-formWrap__note">※緊急時のみ使用いたします</dd>
+      <dd>
+        <input class="jsc-targetCountUp p-top-formWrap__inputText u-mb5 jsc_inp" data-meta="tell" type="text" name="teacher_telephon" maxlength="20" placeholder="090-0000-0000">
+        <p class="error_txt">電話番号の形式を正しく入力してください</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">住所<span class="p-top-formWrap__must">*</span></dt>
+      <dd class="p-top-formWrap__note">※講師業確定した際に、契約書送付で必要になります。</dd>
+      <dd><input class="p-top-formWrap__inputText u-mb5" type="text" name="teacher_adress" placeholder="東京都世田谷区世田谷1-41-2">
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">開発時に普段利用しているエディタ / IDE<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="jsc-targetCountUp p-top-formWrap__inputText u-mb5" type="text" name="teacher_editor" maxlength="20" placeholder="Visual Studio">
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/20</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">経験のある言語 / ライブラリ<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__radio" id="teacherPython2" type="checkbox" name="teacher_experience[]" value="Python2系">
+        <label class="p-top-formWrap__input--square" for="teacherPython2">Python2系</label>
+        <input class="p-top-formWrap__radio" id="teacherPython3" type="checkbox" name="teacher_experience[]" value="Python3系">
+        <label class="p-top-formWrap__input--square" for="teacherPython3">Python3系</label>
+        <input class="p-top-formWrap__radio" id="teacherR" type="checkbox" name="teacher_experience[]" value="R">
+        <label class="p-top-formWrap__input--square" for="teacherR">R</label>
+        <input class="p-top-formWrap__radio" id="teacherRuby" type="checkbox" name="teacher_experience[]" value="Ruby">
+        <label class="p-top-formWrap__input--square" for="teacherRuby">Ruby</label>
+        <input class="p-top-formWrap__radio" id="teacherC" type="checkbox" name="teacher_experience[]" value="C">
+        <label class="p-top-formWrap__input--square" for="teacherC">C</label>
+        <input class="p-top-formWrap__radio" id="teacherJava" type="checkbox" name="teacher_experience[]" value="Java">
+        <label class="p-top-formWrap__input--square" for="teacherJava">Java</label>
+        <input class="p-top-formWrap__radio" id="teacherSwift" type="checkbox" name="teacher_experience[]" value="Swift">
+        <label class="p-top-formWrap__input--square" for="teacherSwift">Swift</label>
+        <input class="p-top-formWrap__radio" id="teacherGit" type="checkbox" name="teacher_experience[]" value="Git">
+        <label class="p-top-formWrap__input--square" for="teacherGit">Git</label>
+        <input class="p-top-formWrap__radio" id="teacherChainer" type="checkbox" name="teacher_experience[]" value="Chainer">
+        <label class="p-top-formWrap__input--square" for="teacherChainer">Chainer</label>
+        <input class="p-top-formWrap__radio" id="teacherTensorFlow" type="checkbox" name="teacher_experience[]" value="TensorFlow">
+        <label class="p-top-formWrap__input--square" for="teacherTensorFlow">TensorFlow</label>
+        <input class="p-top-formWrap__radio" id="teacherNumpy" type="checkbox" name="teacher_experience[]" value="numpy">
+        <label class="p-top-formWrap__input--square" for="teacherNumpy">numpy</label>
+        <input class="p-top-formWrap__radio" id="teacherPandas" type="checkbox" name="teacher_experience[]" value="pandas">
+        <label class="p-top-formWrap__input--square" for="teacherPandas">pandas</label>
+        <input class="p-top-formWrap__radio" id="teacherMatplotlib" type="checkbox" name="teacher_experience[]" value="matplotlib">
+        <label class="p-top-formWrap__input--square" for="teacherMatplotlib">matplotlib</label>
+        <input class="p-top-formWrap__radio" id="teacherSeaborn" type="checkbox" name="teacher_experience[]" value="seaborn">
+        <label class="p-top-formWrap__input--square" for="teacherSeaborn">seaborn</label>
+        <input class="p-top-formWrap__radio" id="teacherSkitlearn" type="checkbox" name="teacher_experience[]" value="sckit-learn">
+        <label class="p-top-formWrap__input--square" for="teacherSkitlearn">sckit-learn</label>
+        <input class="p-top-formWrap__radio" id="teacherMecab" type="checkbox" name="teacher_experience[]" value="mecab">
+        <label class="p-top-formWrap__input--square" for="teacherMecab">mecab</label>
+        <input class="p-top-formWrap__radio" id="teacherWord2vec" type="checkbox" name="teacher_experience[]" value="word2vec">
+        <label class="p-top-formWrap__input--square" for="teacherWord2vec">word2vec</label>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">選択した言語の開発年数を記載してください<span class="p-top-formWrap__must">*</span></dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="1" wrap="soft" maxlength="50" name="teacher_years" placeholder="Python10年 / C 4年"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/50</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">過去に作成したプログラムで共有できるものがあればURLを記載してください</dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="1" wrap="soft" maxlength="100" name="teacher_achievement" placeholder="https://github.com/xxx/cyberbrain"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/100</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">社内研修及びセミナー等で、プログラミングを教えた経験があれば記載してください</dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="1" wrap="soft" maxlength="50" name="teacher_seminer" placeholder="30人規模のセミナーにて合計2年間Pythonの講師を行った"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/50</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">現在の業務内容を記載ください<span class="p-top-formWrap__must">*</span></dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="1" wrap="soft" maxlength="100" name="teacher_now" placeholder="AI会社にてAIの開発"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/100</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">これまでの職務経歴を簡潔にお書きください。<span class="p-top-formWrap__must">*</span></dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="6" wrap="soft" maxlength="500" name="teacher_history" placeholder="勤務先：&nbsp;&nbsp;&nbsp;&nbsp;&#10;勤務年数：&nbsp;&nbsp;&nbsp;&nbsp;&#10;業務内容：&nbsp;&nbsp;&nbsp;&nbsp;&#10;その他："></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/500</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">大学や大学院等で研究されている分野があれば可能であれば記載ください。</dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="6" wrap="soft" maxlength="500" name="teacher_research" placeholder="人工知能を用いた株価予測の研究, etc"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/500</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">担当したいコースをご選択ください<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__radio" id="teacherBasic" type="checkbox" name="teacher_course[]" value="Python2系">
+        <label class="p-top-formWrap__input--square" for="teacherBasic">Python基本コース</label><br>
+        <input class="p-top-formWrap__radio" id="teacherPrograming" type="checkbox" name="teacher_course[]" value="Python3系">
+        <label class="p-top-formWrap__input--square" for="teacherPrograming">AI&nbsp;Programmingコース</label>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">レッスン可能な時間帯（予定や見込みも可）を記載ください<span class="p-top-formWrap__must">*</span></dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="1" wrap="soft" maxlength="50" name="teacher_available" placeholder="月、水、金、日: それぞれ22:00〜24:00もしくは土日祝日13〜22時"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/50</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">今回応募された動機をご記入ください<span class="jsc-targetCountUp p-top-formWrap__must">*</span></dt>
+      <dd><textarea class="p-top-formWrap__textarea" rows="6" wrap="soft" maxlength="500" name="teacher_motivate" placeholder="AIを開発できる人口を増やし、社会に貢献していきたい"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/500</p>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle u-mb7">紹介者がいる場合は、紹介者名もしくは団体名を記入してください</dt>
+      <dd><input class="jsc-targetCountUp p-top-formWrap__inputText u-mb5" type="text" name="teacher_introduce" maxlength="30" placeholder="サイバーブレイン 谷カズノリ">
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/30</p>
+      </dd>
+    </dl>
+    <dl class="u-mb30">
+      <dt class="p-top-formWrap__labelTitle u-mb7">その他講師業務に関して、ご質問ございましたらご記入ください</dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__textarea" rows="1" wrap="soft" maxlength="50" name="teacher_question" placeholder="何名ほどのクラスを取り扱うのか気になる"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/50</p>
+      </dd>
+    </dl>
+    <input type="hidden" name="kind" value="teacher">
+    <a href="javascript:void(0)" class="p-top-formWrap__submit jsc_form_submit">内容を送信</a>
+  </form>
+</li>
+<li>
+  <h3 class="p-top-formWrap__title">AI&nbsp;Academy<span class="u-inlineBlock">無料レッスンの予約</span></h3>
+  <div class="p-top-formWrap__bar"></div>
+  <p class="p-top-formWrap__text">AI Academyで事前登録及び無料レッスンするために事前に登録していただくことで、40分の無料体験レッスンが受けることができます。フォーム送信完了後、担当者から入力いただいたメールアドレスにメールを送信致しますので、確認がとれるメールアドレスをご選択お願い致します。<br>また、無料体験レッスン以外にも無料説明として、AI Academyに関してお聞きしたいことなど、40分間の間で質疑応答も行なっております。</p>
+  <form action="<%- root %>php/send.php" method="post" class="p-top-formWrap__form">
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">お名前<span class="p-top-formWrap__must">*</span></dt>
+      <dd><input class="p-top-formWrap__inputText name_inp" type="text" name="lesson_name" maxlength="20" placeholder="谷 かずのり"></dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">職業<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <label class="p-top-formWrap__triangle">
+          <select id="job" class="p-top-formWrap__selectBox--job" name="lesson_job">
+            <option value="学生">学生</option>
+            <option value="エンジニア・プログラマー">エンジニア・プログラマー</option>
+            <option value="経営者">経営者</option>
+            <option value="マーケター">マーケター</option>
+            <option value="デザイナー">デザイナー</option>
+            <option value="ディレクター">ディレクター</option>
+            <option value="フリーター">フリーター</option>
+            <option value="人事">人事</option>
+            <option value="主婦">主婦</option>
+            <option value="その他">その他</option>
+          </select>
+        </label>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">年齢<span class="p-top-formWrap__must">*</span></dt>
+      <dd><label for="age" class="p-top-formWrap__triangle">
+        <select class="p-top-formWrap__selectBox--age" id="age" name="lesson_age">
+          <option value="10代">10代</option>
+          <option value="20代前半">20代前半</option>
+          <option value="20代後半">20代後半</option>
+          <option value="30代前半">30代前半</option>
+          <option value="30代後半">30代後半</option>
+          <option value="40代前半">40代前半</option>
+          <option value="40代後半">40代後半</option>
+          <option value="50代">50代以上</option>
+        </select>
+      </label>
+    </dd>
+  </dl>
+  <dl class="u-mb20">
+    <dt class="p-top-formWrap__labelTitle">メールアドレス<span class="p-top-formWrap__must">*</span></dt>
+    <dd>
+      <input class="p-top-formWrap__inputText jsc_inp" data-meta="email" type="text" name="lesson_mail" maxlength="30" placeholder="メールアドレス">
+      <p class="error_txt">アドレスの形式を正しく入力してください</p>
+    </dd>
+  </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">プログラミング経験の有無<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__radio" id="experience_0" type="radio" name="lesson_experience" value="未経験">
+        <label class="p-top-formWrap__input" for="experience_0">全くない。未経験</label><br>
+        <input class="p-top-formWrap__radio" id="experience_1" type="radio" name="lesson_experience" value="約一ヶ月">
+        <label class="p-top-formWrap__input" for="experience_1">約一ヶ月</label><br>
+        <input class="p-top-formWrap__radio" id="experience_2" type="radio" name="lesson_experience" value="2ヶ月〜5ヶ月">
+        <label class="p-top-formWrap__input" for="experience_2">2ヶ月〜5ヶ月</label><br>
+        <input class="p-top-formWrap__radio" id="experience_3" type="radio" name="lesson_experience" value="約6ヶ月">
+        <label class="p-top-formWrap__input" for="experience_3">約6ヶ月</label><br>
+        <input class="p-top-formWrap__radio" id="experience_4" type="radio" name="lesson_experience" value="約1年">
+        <label class="p-top-formWrap__input" for="experience_4">約1年</label><br>
+        <input class="p-top-formWrap__radio" id="experience_5" type="radio" name="lesson_experience" value="1年以上">
+        <label class="p-top-formWrap__input" for="experience_5">1年以上</label>
+      </dd>
+    </dl>
+    <dl class="u-mb20">
+      <dt class="p-top-formWrap__labelTitle">どちらのコースの無料体験を希望しますか？<span class="p-top-formWrap__must">*</span></dt>
+      <dd>
+        <input class="p-top-formWrap__radio" id="course_0" type="radio" name="lesson_course" value="Pythonプログラミングコース">
+        <label class="p-top-formWrap__input" for="course_0">Pythonプログラミングコース</label><br>
+        <input class="p-top-formWrap__radio" id="course_1" type="radio" name="lesson_course" value="AIプログラミングコース">
+        <label class="p-top-formWrap__input" for="course_1">AIプログラミングコース</label><br>
+        <input class="p-top-formWrap__radio" id="course_2" type="radio" name="lesson_course" value="有料登録に申し込みたい">
+        <label class="p-top-formWrap__input" for="course_2">有料登録に申し込みたい</label>
+      </dd>
+    </dl>
+    <dl class="u-mb30">
+      <dt class="p-top-formWrap__labelTitle u-mb7">無料体験受講の際に、レッスンが可能な日程と、受講可能な時間帯を可能な限り入力お願い致します。<span class="p-top-formWrap__must">*</span></dt>
+      <dd><textarea class="jsc-targetCountUp p-top-formWrap__inputText u-mb5" name="lesson_when" rows="1" maxlength="50" placeholder="1/14(18:00~18:40),1/15(14:00~14:40)"></textarea>
+        <p class="jsc-getCountUp p-top-formWrap__countUp"><span>0</span>/50</p>
+      </dd>
+    </dl>
+    <input type="hidden" name="kind" value="lesson">
+    <a href="javascript:void(0)" class="p-top-formWrap__submit jsc_form_submit">内容を送信</a>
+  </form>
+</li>
+    </ul>
+  </div>
+</div>
+
+<% include template/_footer %>

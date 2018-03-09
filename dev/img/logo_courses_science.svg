@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="181" viewBox="0 0 450 181">
+    <defs>
+        <ellipse id="a" cx="77.739" cy="68.983" rx="13.272" ry="13.29"/>
+        <ellipse id="b" cx="25.281" cy="25.315" rx="7.584" ry="7.594"/>
+        <ellipse id="c" cx="25.281" cy="25.315" rx="7.584" ry="7.594"/>
+        <ellipse id="d" cx="7.584" cy="89.867" rx="7.584" ry="7.594"/>
+        <ellipse id="e" cx="93.539" cy="27.846" rx="7.584" ry="7.594"/>
+        <ellipse id="f" cx="152.949" cy="7.594" rx="7.584" ry="7.594"/>
+        <ellipse id="g" cx="163.062" cy="63.287" rx="7.584" ry="7.594"/>
+        <ellipse id="h" cx="118.82" cy="118.979" rx="7.584" ry="7.594"/>
+        <ellipse id="i" cx="37.921" cy="129.105" rx="7.584" ry="7.594"/>
+        <ellipse id="j" cx="341.924" cy="93.031" rx="13.272" ry="13.29"/>
+        <ellipse id="k" cx="215.52" cy="141.129" rx="13.272" ry="13.29"/>
+        <ellipse id="l" cx="289.466" cy="49.364" rx="7.584" ry="7.594"/>
+        <ellipse id="m" cx="256.601" cy="84.804" rx="7.584" ry="7.594"/>
+        <ellipse id="n" cx="216.152" cy="40.503" rx="7.584" ry="7.594"/>
+        <ellipse id="o" cx="348.876" cy="39.238" rx="7.584" ry="7.594"/>
+        <ellipse id="p" cx="423.455" cy="54.427" rx="7.584" ry="7.594"/>
+        <ellipse id="q" cx="400.702" cy="94.93" rx="7.584" ry="7.594"/>
+        <ellipse id="r" cx="338.764" cy="132.902" rx="7.584" ry="7.594"/>
+        <ellipse id="s" cx="279.354" cy="121.51" rx="7.584" ry="7.594"/>
+        <ellipse id="t" cx="166.854" cy="162.014" rx="7.584" ry="7.594"/>
+        <ellipse id="u" cx="237.64" cy="173.406" rx="7.584" ry="7.594"/>
+        <ellipse id="v" cx="194.663" cy="98.727" rx="7.584" ry="7.594"/>
+        <ellipse id="w" cx="442.416" cy="140.497" rx="7.584" ry="7.594"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#00E7E7" stroke-linecap="square" stroke-width="3" d="M77.107 69.615L24.649 25.948M77.107 69.615L8.848 89.867M77.107 69.615L37.92 127.84M77.107 69.615l39.185 48.098M77.107 69.615l87.219-6.328M214.888 41.77l-50.562 21.517M191.503 97.462l-27.177-34.175M191.503 97.462l63.202-12.025M77.107 69.615L151.685 8.86M77.107 69.615l16.432-39.237"/>
+        <g>
+            <use fill="#FFF" xlink:href="#a"/>
+            <ellipse cx="77.739" cy="68.983" stroke="#00E7E7" stroke-width="3" rx="11.772" ry="11.79"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#b"/>
+            <ellipse cx="25.281" cy="25.315" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#c"/>
+            <ellipse cx="25.281" cy="25.315" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#d"/>
+            <ellipse cx="7.584" cy="89.867" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#e"/>
+            <ellipse cx="93.539" cy="27.846" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#f"/>
+            <ellipse cx="152.949" cy="7.594" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#g"/>
+            <ellipse cx="163.062" cy="63.287" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#h"/>
+            <ellipse cx="118.82" cy="118.979" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#i"/>
+            <ellipse cx="37.921" cy="129.105" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <path stroke="#00E7E7" stroke-linecap="square" stroke-width="3" d="M341.292 93.664l-52.458-43.667M341.292 93.664l-125.14-51.262M341.292 93.664l-85.955-6.961M278.09 121.51l-22.753-34.807M278.722 122.776l-61.306 18.353M194.663 99.36l22.753 41.77M166.222 162.014l51.194-20.885M238.272 174.038l-20.856-32.909M341.292 93.664l-3.16 39.871M341.292 93.664l58.778 2.532M343.82 92.399l98.596 48.098M341.292 93.664l80.899-39.237M341.292 93.664l8.216-54.426"/>
+        <g>
+            <use fill="#FFF" xlink:href="#j"/>
+            <ellipse cx="341.924" cy="93.031" stroke="#00E7E7" stroke-width="3" rx="11.772" ry="11.79"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#k"/>
+            <ellipse cx="215.52" cy="141.129" stroke="#00E7E7" stroke-width="3" rx="11.772" ry="11.79"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#l"/>
+            <ellipse cx="289.466" cy="49.364" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#m"/>
+            <ellipse cx="256.601" cy="84.804" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#n"/>
+            <ellipse cx="216.152" cy="40.503" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#o"/>
+            <ellipse cx="348.876" cy="39.238" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#p"/>
+            <ellipse cx="423.455" cy="54.427" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#q"/>
+            <ellipse cx="400.702" cy="94.93" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#r"/>
+            <ellipse cx="338.764" cy="132.902" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#s"/>
+            <ellipse cx="279.354" cy="121.51" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#t"/>
+            <ellipse cx="166.854" cy="162.014" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#u"/>
+            <ellipse cx="237.64" cy="173.406" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#v"/>
+            <ellipse cx="194.663" cy="98.727" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+        <g>
+            <use fill="#FFF" xlink:href="#w"/>
+            <ellipse cx="442.416" cy="140.497" stroke="#00E7E7" stroke-width="3" rx="6.084" ry="6.094"/>
+        </g>
+    </g>
+</svg>

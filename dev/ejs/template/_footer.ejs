@@ -1,0 +1,46 @@
+<footer>
+  <div class="l-footer">
+    <p class="l-footer-mainImage"><img src="<%- root %>assets/img/logo_title_green.svg" alt="タイトルロゴ"></p>
+    <div class="l-footer-navWrap">
+      <div class="l-footer-navWrap__inner">
+        <div class="l-footer-navWrap__listWrap">
+          <p class="l-footer-navTitle">サイトに関して</p>
+          <ul class="l-footer-list">
+            <li><a href="<%- root %>rule/">利用規約</a></li>
+            <li><a href="<%- root %>p_policy/">プライバシーポリシー</a></li>
+            <li><a href="<%- root %>legal/">特定商取引法に基づく表記</a></li>
+          </ul>
+        </div>
+        <div class="l-footer-navWrap__listWrap">
+          <p class="l-footer-navTitle">法人の方へ</p>
+          <ul class="l-footer-list">
+            <li><a href="<%- root %>?id=teacher" class="jsc-goToForm" data-goto="1">AI講師募集</a></li>
+            <li><a href="<%- root %>?id=company" class="jsc-goToForm" data-goto="2">AIエンジニアをスカウトしたい企業様</a></li>
+            <li><a href="<%- root %>alliance/">提携企業・団体</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="l-footer-navWrap__inner">
+        <div class="l-footer-navWrap__listWrap">
+          <p class="l-footer-navTitle">公式SNS</p>
+          <ul class="l-footer-list">
+            <li><a href="https://twitter.com/AI_Academy_JP" target="blank">Twitter</a></li>
+          </ul>
+        </div>
+        <dl class="l-footer-navWrap__listWrap">
+          <dt class="l-footer-navTitle u-textAlign__center--sp">Powerd&nbsp;by...</dt>
+          <dd class="l-footer-CBimage u-m0auto--sp"><a href="<%- root %>about/"><img src="<%- root %>assets/img/logo_footer_cyberBrain.png" alt="ロゴCyberbrain"></a></dd>
+        </dl>
+      </div>
+    </div>
+    <p class="l-footer-copyRight">Copyright&nbsp;&copy;&nbsp;CyberBrain,&nbsp;Inc&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+  </div>
+</footer>
+</div>
+<% if( page.name == 'thanks' ){ %>
+<% include _admatrix-thanks %>
+<% }else{ %>
+<% include _admatrix %>
+<% } %>
+</body>
+</html>

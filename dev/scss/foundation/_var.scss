@@ -1,0 +1,18 @@
+//変数定義（色）
+$maincolor: #00E7E7;
+$aiblack: #111;
+$aigray: #777;
+$aipalegray: #ddd;
+// $path: "/LP/CB/";
+//メディアクエリブレイクポイント
+$breakpoints: (
+  'sp': 'screen and (max-width: 640px)',
+  'pc': 'screen and (max-width: 960px)',
+  'tab': 'screen and (min-width: 641px) and (max-width: 960px)',
+  'overtab': 'screen and (min-width: 641px)'
+) !default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

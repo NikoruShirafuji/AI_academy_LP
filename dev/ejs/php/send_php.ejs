@@ -1,0 +1,187 @@
+<?php
+session_start();
+//$_SESSION['token'] = session_id();
+
+header("Content-Type: text/html; charset=UTF-8");
+if(!$_POST){//直アクセスでリダイレクト
+	header('Location: ../index.html');
+	exit;
+}
+
+//トークンをセッションから取得
+//function checkToken(){
+	//セッションが空か生成したトークンと異なるトークンでPOSTされたときは不正アクセス
+//	if(empty($_SESSION['token']) || ($_SESSION['token'] != $_POST['token'])){
+//		echo '不正なPOSTが行われました', PHP_EOL;
+//		exit;
+//	}
+//}
+//checkToken();
+
+$add_header="From:AI Academy<ai_academy@cyberbra.in>\n";//送信者の情報(メールヘッダー)
+$add_header .= "Reply-to: ai_academy@cyberbra.in\n";//送信者の情報(メールヘッダー)
+$add_header .= "X-Mailer: PHP/". phpversion();
+$opt = '-f'.'info@cyberbra.in'; //送信エラーの時にエラーメールを返す先
+
+//講師募集のだしわけ
+if (!empty($_POST['teacher_experience'])){
+	$_teacher_experience = implode('、', $_POST['teacher_experience']);
+}
+if (!empty($_POST['teacher_course'])){
+	$_teacher_course = implode('、', $_POST['teacher_course']);
+}
+
+if ($_POST['kind'] == 'lesson'){
+//メールの本文
+$message =<<<HTML
+{$_POST['lesson_name']} 様
+
+AI Academy無料レッスンの予約ありがとうございます！
+以下、予約内容の確認になります。
+【職業】
+{$_POST['lesson_job']}
+【年齢】
+{$_POST['lesson_age']}
+【メールアドレス】
+{$_POST['lesson_mail']}
+【プログラミング経験の有無】
+{$_POST['lesson_experience']}
+【希望体験コース】
+{$_POST['lesson_course']}
+【レッスンが可能な日程と受講可能な時間帯】
+{$_POST['lesson_when']}
+
+内容確認後、担当者より折り返しご連絡をさせて頂きます。
+今しばらくお待ちください。
+
+※本メールに心当たりがない場合は、
+お手数ですが管理者(info@cyberbra.in)までご連絡ください。
+
+---------------
+本メールは送信専用です。
+ご返信いただいても対応できかねますのでよろしくお願い致します。
+---------------
+
+━━━━━━━━━━━━━━━━━━━━━━
+サイバーブレイン 株式会社 / CyberBrain Inc.
+Mail：info@cyberbra.in
+━━━━━━━━━━━━━━━━━━━━━━
+HTML;
+mb_language("ja");// カレントの言語を日本語に設定する
+mb_internal_encoding("UTF-8");
+mb_send_mail($_POST['lesson_mail'],"【AI Academy】ご予約ありがとうございます！",$message,$add_header,$opt);
+
+//マスター管理者にもお問い合わせがあったことを知らせる
+mb_send_mail('shirafuji@maisonmarc.com,info@cyberbra.in',"【レッスン予約】LPからのコンバージョンです。",$message,$add_header,$opt);
+} else if ($_POST['kind'] == 'teacher'){
+//メールの本文
+$message =<<<HTML
+{$_POST['teacher_name']}（{$_POST['teacher_kana']}）様
+
+AI Academy講師募集にご応募ありがとうございます！
+以下、応募内容の確認になります。
+【年齢】
+{$_POST['teacher_age']}
+【性別】
+{$_POST['teacher_gender']}
+【メールアドレス】
+{$_POST['teacher_mail']}
+【緊急連絡先電話番号】
+{$_POST['teacher_telephon']}
+【住所】
+{$_POST['teacher_adress']}
+【開発時のエディタ】
+{$_POST['teacher_editor']}
+【経験のある言語 / ライブラリ】
+{$_teacher_experience}
+【選択した言語の開発年数】
+{$_POST['teacher_years']}
+【ポートフォリオ】
+{$_POST['teacher_achievement']}
+【講師経験】
+{$_POST['teacher_seminer']}
+【現在の業務内容】
+{$_POST['teacher_now']}
+【これまでの職務経歴】
+{$_POST['teacher_history']}
+【研究機関での専攻分野】
+{$_POST['teacher_research']}
+【担当希望コース】
+{$_teacher_course}
+【レッスンが可能な日程と時間帯】
+{$_POST['teacher_available']}
+【応募動機】
+{$_POST['teacher_motivate']}
+【紹介者・団体名】
+{$_POST['teacher_introduce']}
+【その他】
+{$_POST['teacher_question']}
+
+内容確認後、担当者より折り返しご連絡をさせて頂きます。
+今しばらくお待ちください。
+
+※本メールに心当たりがない場合は、
+お手数ですが管理者(info@cyberbra.in)までご連絡ください。
+
+---------------
+本メールは送信専用です。
+ご返信いただいても対応できかねますのでよろしくお願い致します。
+---------------
+
+━━━━━━━━━━━━━━━━━━━━━━
+サイバーブレイン 株式会社 / CyberBrain Inc.
+Mail：info@cyberbra.in
+━━━━━━━━━━━━━━━━━━━━━━
+HTML;
+mb_language("ja");// カレントの言語を日本語に設定する
+mb_internal_encoding("UTF-8");
+mb_send_mail($_POST['teacher_mail'],"【AI Academy】ご応募ありがとうございます！",$message,$add_header,$opt);
+
+//マスター管理者にもお問い合わせがあったことを知らせる
+mb_send_mail('shirafuji@maisonmarc.com,info@cyberbra.in',"【講師募集】LPからのコンバージョンです。",$message,$add_header,$opt);
+} else if ($_POST['kind'] == 'company'){
+//メールの本文
+$message =<<<HTML
+{$_POST['company_name']} 様
+
+AI Academyにお問い合わせありがとうございます！
+以下、お問い合わせ内容の確認になります。
+【企業名】
+{$_POST['company_companyName']}
+【メールアドレス】
+{$_POST['company_mail']}
+【電話番号】
+{$_POST['company_telephon']}
+【部署名】
+{$_POST['company_section']}
+【役職】
+{$_POST['company_position']}
+【備考】
+{$_POST['company_remarks']}
+
+内容確認後、担当者より折り返しご連絡をさせて頂きます。
+今しばらくお待ちください。
+
+※本メールに心当たりがない場合は、
+お手数ですが管理者(info@cyberbra.in)までご連絡ください。
+
+---------------
+本メールは送信専用です。
+ご返信いただいても対応できかねますのでよろしくお願い致します。
+---------------
+
+━━━━━━━━━━━━━━━━━━━━━━
+サイバーブレイン 株式会社 / CyberBrain Inc.
+Mail：info@cyberbra.in
+━━━━━━━━━━━━━━━━━━━━━━
+HTML;
+mb_language("ja");// カレントの言語を日本語に設定する
+mb_internal_encoding("UTF-8");
+mb_send_mail($_POST['company_mail'],"【AI Academy】お問い合わせありがとうございます！",$message,$add_header,$opt);
+
+//マスター管理者にもお問い合わせがあったことを知らせる
+mb_send_mail('shirafuji@maisonmarc.com,info@cyberbra.in',"【お問い合わせ】LPからのコンバージョンです。",$message,$add_header,$opt);
+}
+
+header('Location: ../thanks/index.html');//送信完了後にサンクスページにリダイレクトする
+?>

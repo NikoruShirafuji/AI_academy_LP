@@ -1,0 +1,28 @@
+@font-face {
+  font-family: MoskLight300;
+
+  src: url(#{$path}assets/font/MoskLight300.woff);
+}
+@font-face {
+  font-family: MoskBold700;
+
+  src: url(#{$path}assets/font/MoskBold700.woff);
+}
+body {
+  color: #777;
+  font-family: YuGothic,"Yu Gothic","游ゴシック",
+  sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+body {
+  line-height: 1.0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
